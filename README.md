@@ -22,6 +22,7 @@ The team consists of CS, Data Science, and Applied Math majors at UC Berkeley.
 - Zoe Liu
 - Yikang Li
 - Ollie Downs
+- Winifred Chung 
 
 ## Skills Objectives 
 
