@@ -1,6 +1,6 @@
 ## Cabinet of Curiosity: Exploratory analysis of Natural History Databases
 
-## About
+### About
 
 Natural history data is broad in scope and can range from species occurrence data to environmental measurements to basically any data that describes how organisms interact with each other and their environment.  In the past 15 years there has been an increasing drive to digitize this data and make this data available through public databases.  This project explores these vast datasets from a data science perspective. We will be performing both team and self-directed exploratory analyses with immediate products in the form of medium length reports that will be published on-line.  
 
@@ -10,7 +10,19 @@ The purpose of this work is to:
 2. survey the types of questions that are possible in these databases 
 3. Provide critical analysis and make recommendations / build tools to increase usability of these databases 
 4. perform biological / ecological research that can be expanded in greater depth for peer reviewed publication.  
-## Skills to improve this semester
+
+## Team 
+
+- Yihui Zhu
+- Jesse Woo
+- Samantha Tang
+- Ciera Martinez
+- Yuqing Lu
+- Zoe Liu
+- Yikang Li
+- Ollie Downs
+
+### Skills Objectives 
 
 - learn to ask research questions
 - statistical analysis of research questions
@@ -24,9 +36,9 @@ The purpose of this work is to:
 - critical analysis of code
 - write documentation
 
-## Questions that need to be answered when exploring these databases this semester
+### Questions that need to be answered when exploring these databases this semester
 
-- What features you find most useful. 
+- What features you find most useful?
 - What kind of questions can we ask when using this database?
 - What tools are available top use this database?
 - What skills are required to use this database? Are there different options depending on skill level?
@@ -37,7 +49,7 @@ The purpose of this work is to:
 - Are there tools that you can imagine being built that would make using this database more usable?
 - What other databases can you use to merge into your database easily?
 
-## Steps for posting on the Cabinet of Curiosity Site
+### Steps for posting on the Cabinet of Curiosity Site
 
 1. Fork repository (repo) into your Github user account.
 2. Clone repository onto your local machine. 
