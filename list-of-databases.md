@@ -1,99 +1,99 @@
-##  List of databases
+# List of databases
 
 This is a living document to survey basic information about specific Natural History databases. The purpose of this list is to act as reference for getting a superficial view of databases offering data.  
 
-### Arctos
+## Arctos
 
 - Link: [Arctos](http://arctos.database.museum/home.cfm)
 - About:
 - Type of data offered:
 - How to access data:
 
-### GBIF
+## GBIF
 
 - Link: [GBIF](https://www.gbif.org/)
 - About:
 - Type of data offered:
 - How to access data:
 
-### iDigBio
+## iDigBio
 
 - Link: [IDIGBio](https://www.idigbio.org/)
 - About:
 - Type of data offered:
 - How to access data:
 
-### MorphoSource
+## MorphoSource
 
 - Link: [MorphoSource](https://www.morphosource.org/)
 - About:
 - Type of data offered:
 - How to access data:
 
-### MoveBank
+## MoveBank
 
 - Link: [MoveBank](https://www.movebank.org/)
 - About:
 - Type of data offered:
 - How to access data:
 
-### BHL 
+## BHL 
 
 - Link: [BHL](https://www.biodiversitylibrary.org/)
 - About:
 - Type of data offered:
 - How to access data:
 
-### Vertnet
+## Vertnet
 
 - Link: [Vertnet](http://vertnet.org/)
 - About:
 - Type of data offered:
 - How to access data:
 
-### The Paleobiology Database
+## The Paleobiology Database
 
 - Link: [The Paleobiology Database](https://paleobiodb.org/#/)
 - About:
 - Type of data offered:
 - How to access data:
 
-### Neotoma
+## Neotoma
 
 - Link: [Neotoma](https://www.neotomadb.org/)
 - About:
 - Type of data offered:
 - How to access data:
 
-### Barcode of Life
+## Barcode of Life
 
 - Link:  [Barcode of Life](http://boldsystems.org/)
 - About:
 - Type of data offered:
 - How to access data:
 
-### Bird Sound Database
+## Bird Sound Database
 
 - Link: [Bird Sounds](https://www.xeno-canto.org/)
 - About:
 - Type of data offered:
 - How to access data:
 
-### DataOne
+## DataOne
 
 - Link: [DataOne](https://www.dataone.org/)
 - About:
 - Type of data offered:
 - How to access data:
 
-### Google Earth Engine
+## Google Earth Engine
 
 - Link: [Google Earth Engine](https://www.dataone.org/)
 - About:
 - Type of data offered:
 - How to access data:
 
-### Globi
+## Globi
 
 - Link: [Globi](https://www.globalbioticinteractions.org/)
 - About:
