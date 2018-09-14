@@ -88,9 +88,9 @@ This is a living document to survey basic information about specific Natural His
 
 ## Google Earth Engine
 
-- Link: [Google Earth Engine](https://www.dataone.org/)
+- Link: [Google Earth Engine](https://earthengine.google.com/)
 - About:
-- Type of data offered:
+- Type of data offered: satellite imagery, geospatial
 - How to access data:
 
 ## Globi
