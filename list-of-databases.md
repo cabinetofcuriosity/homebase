@@ -91,7 +91,7 @@ This is a living document to survey basic information about specific Natural His
 - Link: [Google Earth Engine](https://earthengine.google.com/)
 - About: Earth Engine hosts satellite imagery and is a tool that allows for analysis of geospatial datasets, which are made available for global-scale data mining. Images of Earth may go back more than 40 years and are ingested on a daily basis. 
 - Type of data offered: satellite imagery, geospatial
-- How to access data: First, request access by [signing up] (https://signup.earthengine.google.com/#!/). Once accepted, browse the [data catalog] (https://developers.google.com/earth-engine/datasets/) and find a dataset that you're interested in! 
+- How to access data: First, request access by [signing up](https://signup.earthengine.google.com/#!/). Once accepted, browse the [data catalog](https://developers.google.com/earth-engine/datasets/) and find a dataset that you're interested in! 
 
 ## Globi
 
