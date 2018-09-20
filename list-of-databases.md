@@ -12,9 +12,9 @@ This is a living document to survey basic information about specific Natural His
 ## GBIF
 
 - Link: [GBIF](https://www.gbif.org/)
-- About:
-- Type of data offered:
-- How to access data:
+- About: Aggregator site that unites many the dataset from over 40,000 other datasets. 
+- Type of data offered: It appears as though every type of dataset is offered, but it is unclear how it is able to unite this data. 
+- How to access data: In addition to being able to search by research type, for example [occurance](https://www.gbif.org/occurrence/search) or [species](https://www.gbif.org/developer/species). There is a [API](https://www.gbif.org/developer/summary) where you can be more specific.
 
 ## iDigBio
 
