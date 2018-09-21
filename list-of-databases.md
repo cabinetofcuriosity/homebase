@@ -5,9 +5,9 @@ This is a living document to survey basic information about specific Natural His
 ## Arctos
 
 - Link: [Arctos](http://arctos.database.museum/home.cfm)
-- About:
-- Type of data offered:
-- How to access data:
+- About: This site, used by the UCB Museum of Vertebrate Zoology, houses data from dozens of universities and museums about mammal, bird, reptile, amphibian, fish, microorganism, and other types of specimens. 
+- Type of data offered: Data is offered as specimen information (weight, size, sample types, etc) or as observation information (mostly hand-written or transcribed field notes)
+- How to access data: Use the "search" function and its GUI to search by many different filters, including species name, locality (map capabilities too!), collector, etc.
 
 ## GBIF
 
@@ -96,6 +96,6 @@ This is a living document to survey basic information about specific Natural His
 ## Globi
 
 - Link: [Globi](https://www.globalbioticinteractions.org/)
-- About:
-- Type of data offered:
-- How to access data:
+- About: Globi offers data about species interactions. Data is usually found in (organism) eats/is eaten by/interacts with/etc (another organism). With an experimental but exciting GUI, this database makes it relatively easy to find information about species interactions.
+- Type of data offered: 2-point data: relationships between taxa, broadly.
+- How to access data: Use the search engine on the landing page or the "Browse" feature, which is much more graphic. 
