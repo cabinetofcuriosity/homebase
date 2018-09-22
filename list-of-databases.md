@@ -75,9 +75,9 @@ This is a living document to survey basic information about specific Natural His
 ## Bird Sound Database
 
 - Link: [Bird Sounds](https://www.xeno-canto.org/)
-- About:
-- Type of data offered:
-- How to access data:
+- About: Xeno-Canto is a website that shares bird sounds from around the world. It offers a collection of bird recording data which people/researchers/bird-lovers can access, use, and/or contribute to. 
+- Type of data offered: This database offers the bird recordings of different birds in different parts of the world. The recordings also offer sonograms so that you can take a look at the graph presenting the distributing the sound-energy wavelengths. If you access "All Recordings", you are also supplied with the birds' scientific name, length, and type of call (aka a "call" or a "song"). There is also information on who recorded the sounds, where and when they recorded it, and various other remarks by the recorder. 
+- How to access data: If you want to see/hear the bird recordings of birds in a specific region, you can drag a box around a the region on their map, and it'll help you locate the birds in those areas. You can also access all the recordings that they have by clicking on "Explore" -> "All Recordings". Clicking the play button on the avaliabe files will allow you to hear the bird sounds.
 
 ## DataOne
 
