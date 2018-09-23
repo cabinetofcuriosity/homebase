@@ -40,23 +40,25 @@ This is a living document to survey basic information about specific Natural His
 ## BHL 
 
 - Link: [BHL](https://www.biodiversitylibrary.org/)
-- About:
-- Type of data offered:
-- How to access data:
+- About: The Biodiversity Heritage Library (BHL) is the world’s largest open access digital library for biodiversity literature and archives. BHL is revolutionizing global research by providing free, worldwide access to knowledge about life on Earth.
+- Type of data offered: Can be downloaded as MODS XML, BibTex and tab-delimited text file.
+- How to access data: Click “Download Contents” while viewing a book and select ways to download resources when you click on the drop-down menu for “Download Contents”.
 
 ## Vertnet
 
 - Link: [Vertnet](http://vertnet.org/)
-- About:
-- Type of data offered:
-- How to access data:
+- About: VertNet is a NSF-funded collaborative project that makes biodiversity data free and available on the web. VertNet is an engine for training current and future professionals to use and build upon best practices in data quality, curation, research, and data publishing.
+- Type of data offered: Data were converted into CSV text files and compressed into .zip files. VertNet generates a metadata** file that describes the contents contained within each zipped dataset. And finally, bundle up the metadata and the dataset and upload them to CyVerse.
+- How to access data: All resources produced for and by VertNet are free and open to download. You can find them in the "Resources" >> "DATASETS, TOOLS & CODE" section.
 
 ## The Paleobiology Database
 
 - Link: [The Paleobiology Database](https://paleobiodb.org/#/)
-- About:
-- Type of data offered:
-- How to access data:
+- About: A public database of paleontological data that anyone can use, maintained by an international non-governmental group of paleontologists.
+- Type of data offered: CSV, TSV, JSON, RIS
+- How to access data: You can download by clicking "download data" on their home page. It allows you to download data of all types from the Paleobiology Database. Use the various fields and selectors to specify which information you are looking for, and the form will generate a URL that will retrieve that specific set of records using the data service API. You can also use one or more of the sections below to select a set of records and choose output options. If you close a section, you remove those parameters from the download URL until the section is opened again.
+
+
 
 ## Neotoma
 
