@@ -84,9 +84,9 @@ This is a living document to survey basic information about specific Natural His
 ## DataOne
 
 - Link: [DataOne](https://www.dataone.org/)
-- About:
-- Type of data offered:
-- How to access data:
+- About: The foundation of new innovative environmental science for access to well-described and easily discovered Earth observational data, such as weather, forest types, 
+- Type of data offered: Depending on your search, EML, csv etc. are available.
+- How to access data: After you search a keyword, you can download the files. 
 
 ## Google Earth Engine
 
@@ -101,3 +101,9 @@ This is a living document to survey basic information about specific Natural His
 - About: Globi offers data about species interactions. Data is usually found in (organism) eats/is eaten by/interacts with/etc (another organism). With an experimental but exciting GUI, this database makes it relatively easy to find information about species interactions.
 - Type of data offered: 2-point data: relationships between taxa, broadly.
 - How to access data: Use the search engine on the landing page or the "Browse" feature, which is much more graphic. 
+
+## KNB
+- Link: [KNB](https://knb.ecoinformatics.org/)
+- About: an international repository intended to facilitate ecological and environmental research
+- Type of data offered: Depending on your search, EML, XML, csv, octet stream, Microsoft etc. are available.
+- How to access data: After you search a keyword, you can download the files. 
