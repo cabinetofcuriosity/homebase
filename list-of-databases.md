@@ -84,9 +84,9 @@ This is a living document to survey basic information about specific Natural His
 ## DataOne
 
 - Link: [DataOne](https://www.dataone.org/)
-- About: The foundation of new innovative environmental science for access to well-described and easily discovered Earth observational data, such as weather, forest types, 
-- Type of data offered: Depending on your search, EML, csv etc. are available.
-- How to access data: After you search a keyword, you can download the files. 
+- About: The foundation of new innovative environmental science for access to well-described and easily discovered Earth observational data, such as weather, forest types, floral resource, etc.
+- Type of data offered: Depending on your search, XML, csv,	octet stream (application file), etc. are available.
+- How to access data: After you search a keyword, you can download the files. You can also use their [API](https://releases.dataone.org/online/api-documentation-v2.0/apis/index.html).
 
 ## Google Earth Engine
 
@@ -106,4 +106,4 @@ This is a living document to survey basic information about specific Natural His
 - Link: [KNB](https://knb.ecoinformatics.org/)
 - About: an international repository intended to facilitate ecological and environmental research
 - Type of data offered: Depending on your search, EML, XML, csv, octet stream, Microsoft etc. are available.
-- How to access data: After you search a keyword, you can download the files. 
+- How to access data: After you search a keyword, you can download the files. [API](https://knb.ecoinformatics.org/api)
