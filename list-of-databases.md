@@ -19,9 +19,9 @@ This is a living document to survey basic information about specific Natural His
 ## iDigBio
 
 - Link: [IDIGBio](https://www.idigbio.org/)
-- About:
-- Type of data offered:
-- How to access data:
+- About: The Integrated Digitized Biocollections (iDigBio) is a collection of data and images for millions of biological specimens. 
+- Type of data offered: Taxonomical, Geographical, Physiological data of various species
+- How to access data: The data is publically available and an account is not required to access the data. The [search portal](https://portal.idigbio.org/) can be used to search for a specific species by name or attribute. 
 
 ## MorphoSource
 
