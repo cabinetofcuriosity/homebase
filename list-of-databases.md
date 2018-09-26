@@ -20,7 +20,7 @@ This is a living document to survey basic information about specific Natural His
 
 - Link: [IDIGBio](https://www.idigbio.org/)
 - About: The Integrated Digitized Biocollections (iDigBio) is a collection of data and images for millions of biological specimens. 
-- Type of data offered: Taxonomical, Geographical, Physiological data of various species
+- Type of data offered: Taxonomical, Geographical, Physiological data in CSV and Darwin Core Archive file format along with images of various species. 
 - How to access data: The data is publically available and an account is not required to access the data. The [search portal](https://portal.idigbio.org/) can be used to search for a specific species by name or attribute. 
 
 ## MorphoSource
@@ -71,7 +71,7 @@ This is a living document to survey basic information about specific Natural His
 
 - Link:  [Barcode of Life](http://boldsystems.org/)
 - About: The Barcode of Life database contains taxonomical, geographical, and sequencing data that can be used to identify organisms down to the species level.
-- Type of data offered: Geographic, Taxonomic, and DNA Sequencing data
+- Type of data offered: Geographic, Taxonomic, and DNA Sequencing data in DWC, XML, TSV, FASTA, or TRACE file formats.
 - How to access data: The database is publically available and does not require an account to access the data. The [search portal](http://boldsystems.org/index.php/Public_BINSearch?searchtype=records) can be utilized to access data about an organism, and the  [identification portal](http://boldsystems.org/index.php/IDS_OpenIdEngine) can be used to identify an organism by its DNA sequence. An [API](http://boldsystems.org/index.php/api_home) is also available to pull data from the database. 
 
 ## Bird Sound Database
