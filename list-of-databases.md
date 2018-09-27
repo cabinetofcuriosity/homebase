@@ -33,9 +33,9 @@ This is a living document to survey basic information about specific Natural His
 ## MoveBank
 
 - Link: [MoveBank](https://www.movebank.org/)
-- About:
-- Type of data offered:
-- How to access data:
+- About: help animal tracking researchers to manage, share, protect, analyze, and archive their data.
+- Type of data offered: Animal activities in csv.
+- How to access data: Search the datasets or authors or just browsing the data repository and click the download link.
 
 ## BHL 
 
