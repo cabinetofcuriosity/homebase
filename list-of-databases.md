@@ -63,9 +63,9 @@ This is a living document to survey basic information about specific Natural His
 ## Neotoma
 
 - Link: [Neotoma](https://www.neotomadb.org/)
-- About:
-- Type of data offered:
-- How to access data:
+- About: Neotoma Paleoecology Database and Community is an online hub for data, research, education, and discussion about paleoenvironments.
+- Type of data offered: 
+- How to access data: 1 Download a complete database snapshot in Microsoft Access or SQL Server format. 2 Click Explore Database to learn more about searching, exploring, and downloading Neotoma holdings via an in interactive web application. 3 Click Get Pending Data to find data that have been sent to Neotoma but not incorporated yet into its relational database. Files here include new author submissions not yet processed by Neotoma data stewards as well as miscellaneous datasets that don’t yet fit into the Neotoma database structure 
 
 ## Barcode of Life
 
