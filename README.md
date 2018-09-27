@@ -67,8 +67,6 @@ The team consists of CS, Data Science, and Applied Math majors at UC Berkeley.
 
 When collaborating on projects on Git, one thing you have to keep doing is making sure your forked rep is update with the "main repo".  Here are the steps for updating.  Please do this before you push to Github and update frequently to avoid merge conflicts. Essentially you have to 1. [Configure a remote for your fork](https://help.github.com/articles/configuring-a-remote-for-a-fork/) 2. [Sync you fork](https://help.github.com/articles/syncing-a-fork/).
 
-### Steps 
-
 1. The common term for your forked repo is "upstream". So the first step is assigning the forked repo as a remote repo name `upstream`. 
 2. `git remote -v` to see your remote repos
 3. `git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git` to assign the main repo to a remote repo called `upstream`
