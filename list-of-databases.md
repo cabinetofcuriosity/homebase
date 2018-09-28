@@ -28,7 +28,7 @@ This is a living document to survey basic information about specific Natural His
 - Link: [MorphoSource](https://www.morphosource.org/)
 - About: A site hosted by Duke University Research Computing containing collections of 3D images and media regarding physical objects, most commonly biological specimen.
 - Type of data offered: 3D media sorted by specimen taxonomy, common file formats include STL and PLY. Each specimen includes a description of the project the specimen was used in and a brief physical description of the specimen itself.  
-- How to access data: The data is publicly available, but an account is required to access the data. The [search engine] (https://www.morphosource.org/Browse/Index) allows a user to browse by Institution, Taxonomy, Bibliography, and Project.
+- How to access data: The data is publicly available, but an account is required to access the data. The [search engine](https://www.morphosource.org/Browse/Index) allows a user to browse by Institution, Taxonomy, Bibliography, and Project.
 
 ## MoveBank
 
