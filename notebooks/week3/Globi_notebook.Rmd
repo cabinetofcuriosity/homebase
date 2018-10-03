@@ -1,15 +1,15 @@
 ---
-title: "R Notebook"
+title: "GloBi Notebook"
 output: html_notebook
+Author: Yikang Li
+Date: 2018-10-02
 ---
-
-## Author: Yikang Li
 
 ## GloBi:
 
 Global Biotic Interactions (GloBI) provides open access to species interaction data (e.g., predator-prey, pollinator-plant, pathogen-host, parasite-host) by combining existing open datasets using open source software. By providing an infrastructure to capture and share interaction data, individual biologists can focus on gathering new interaction data and analyzing existing datasets without having to spend resources on (re-) building a cyberinfrastructure to do so.
 
-GloBI is made possible by a community of software engineers, bioinformaticists and biologists. Software engineers such as Jorrit Poelen, Göran Bodenschatz, and Robert Reiz collaborate with bioinformaticists like Chris Mungall, data managers like Sarah E. Miller and biologists like Jim Simons, Anne Thessen, Jen Hammock and Brian Hayden to capture, provide access to and use interaction data that is provided by biologists and citizen scientists around the world. GloBI is funded by EOL's Rubenstein Fellowship Program.
+GloBI is made possible by a community of software engineers, bioinformaticists and biologists. Software engineers such as Jorrit Poelen, Göran Bodtitleenschatz, and Robert Reiz collaborate with bioinformaticists like Chris Mungall, data managers like Sarah E. Miller and biologists like Jim Simons, Anne Thessen, Jen Hammock and Brian Hayden to capture, provide access to and use interaction data that is provided by biologists and citizen scientists around the world. GloBI is funded by EOL's Rubenstein Fellowship Program.
 
 ### Access GloBi:
 
