@@ -1,0 +1,43 @@
+---
+title: "Vertnet Notebook"
+output: html_notebook
+Author: Yikang Li
+Date: 2018-10-03
+---
+
+## Vertnet:   
+
+VertNet is a NSF-funded collaborative project that makes biodiversity data free and available on the web. VertNet is a tool designed to help people discover, capture, and publish biodiversity data. It is also the core of a collaboration between hundreds of biocollections that contribute biodiversity data and work together to improve it. VertNet is an engine for training current and future professionals to use and build upon best practices in data quality, curation, research, and data publishing. Yet, VertNet is still the aggregate of all of the information that it mobilizes.    
+
+The VertNet team includes collaborators from the Universities of California, Colorado, Kansas, and Tulane, and partners from wide-range of biodiversity projects, who are working to build upon the successes of four classic vertebrate networks (FishNet, MaNIS, HerpNET, ORNIS), to combine them into a single integrated data portal, and solve the problems that these networks face. The goal is to design, implement, and maintain a cloud-based computing strategy to create a fast, sustainable, and scalable data platform with capabilities and applications for data discovery, data quality improvement, and visualization that go beyond those of the current networks.   
+
+### Access Vertnet:  
+
+For publishing and using the data, Vertnet has the [*VertNet Portal*](http://portal.vertnet.org/search) which allows the users to search data. There are also advanced search options for filtering in circumstances when you know exactly what type of data you need from the VertNet portal. You can find a detailed instructions on how to search for data on VertNet Portal [here](http://vertnet.org/resources/advancedsearchoptionsguide.html).  
+
+Basically, steps are:   
+1. Enter your keywords into the full text/keyword field or select your advanced search options regarding what data you want.  
+2. Receive some records in a list below the search field.  
+3. Download the dataset by clicking the green "Download" button at the top right of the list of records. (If your dataset is less than 1000 records, the portal will simply ask you to name your dataset and it will commence with the download. If your dataset is 1000 records or more, you'll have to both name your dataset and provide an email address to which they can send you a link to the requested dataset once it's ready.)   
+
+What you downloaded to your local machine will be a text file. You can transform the data into csv or other formats easily using "import" and "export" methods under package "rio" in R. Detailed codes are provided below.
+
+### Example: Get the data on "Felidae":
+Let's say we are interested in the records involving "Felidae". The first step is to enter the keyword "Felidae" in the full text field. Then click "Download" button after we see some records appearing below the search field. Since there are more than 1000 records with "Felidae", we will be asked for an email address to receive the dataset. Here is a [link](http://portal.vertnet.org/search?q=FelidaeFamily) to my search for others to get to it directly.  
+(Once you've clicked the search button, the URL of the search page reflects the search you have just conducted. You can bookmark or copy/paste the link to your search so you can get to it again.)
+
+The next step is to transfer the text file into a csv file. Run the following codes in R under package "rio":
+```{}
+library("rio")
+x <- import("Felidae_Vertnet.txt.tsv")
+export(x, "Felidae_Vertnet.csv")
+```
+import() infers the file format from the file's extension and calls the appropriate data import function for you, returning a simple data.frame. This works for lots of formats.   
+export() can be used to save the results of a simple data transformation.  
+
+Now we should have a csv file "Felidae_Vertnet.csv" of all data involving "Felidae" and we can read and use it afterwards.  
+
+
+
+
+
