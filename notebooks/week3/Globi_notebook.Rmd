@@ -61,7 +61,7 @@ get_interactions(taxon = "Homo sapiens", interaction.type = "preysOn", ...)
 ```
 All other functions perform in similar ways. Examples can be found in the documentation.  
 
-### Getting the dataframe for all interactions with interaction type "preysOn":  
+### Example: Get the dataframe for all interactions with interaction type "preysOn":  
 Let's say we are interested in interaction type "preysOn" and therefore want to extract all data records involving that. We simply do:  
 ```{}
 df = get_interactions_by_type(interactiontype = c("preysOn"))
