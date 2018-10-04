@@ -1,0 +1,80 @@
+---
+title: "KNB Notebook"
+output: html_notebook
+---
+
+# KNB
+
+> The Knowledge Network for Biocomplexity (KNB) is an international repository intended to facilitate ecological and environmental research.
+
+You don't have to become a user to access data in KNB.
+
+# Accessing KNB Data
+You could either search and download that specific data or use their [API](https://knb.ecoinformatics.org/api).
+
+To use their API, you need to install the [rDataone](https://github.com/DataONEorg/rdataone) package in Java, Python or R. I chose R, using the following:
+```{r, eval = FALSE}
+install.packages("dataone")
+library(dataone)
+```
+However, when installing the package, I came across this error:
+
+> Configuration failed because redland was not found.
+
+Following its error message, I installed "redland" using the command (MacOS):
+```{r, eval = FALSE}
+$ brew install redland 
+```
+And then I'm able to install the dataone package.
+
+
+
+```{r, eval = FALSE}
+cn <- CNode("PROD")
+mn <- getMNode(cn, "urn:node:KNB")
+mySearchTerms <- list(q="keywords:climate",
+                      fl="id,title,dateUploaded,abstract,size",
+                      sort="dateUploaded+desc")
+result <- query(mn, solrQuery=mySearchTerms, as="data.frame")
+result
+result[1, c("id", "title")]
+id <- result[1,'id']
+
+
+
+metadata <- rawToChar(getObject(mn, id))
+doc = xmlRoot(xmlTreeParse(metadata, asText=TRUE, trim = TRUE, ignoreBlanks = TRUE))
+tf <- tempfile()
+saveXML(doc, tf)
+# file.show(tf)
+df
+```
+```{r, eval = FALSE}
+dataRaw <- getObject(mn, "knb.92077.1")
+dataChar <- rawToChar(dataRaw)
+theData <- textConnection(dataChar)
+df <- read.csv(theData, stringsAsFactors=FALSE)
+df[1,]
+```
+library(XML)
+library(methods)
+df <- xmlToDataFrame("tf")
+
+# Questions
+- What is XML? How can I make a data frame from it?
+
+# My Exploration
+Since there are a lot of XML files in the databases, I need to learn about XML, which looks really daunting but after a bit reading of [w3schools](https://www.w3schools.com/xml/xml_whatis.asp), I found it fairly manageble. 
+
+Well after reading w3schools, things get a lot more complicated. It tells me to write a Java class with all the readers, scanners and stuff. I think I'll save this after I finish my programming class in Java this semester.
+
+So I googled "import data from XML using R", yes, [lifesaver](https://www.youtube.com/watch?v=1cM_ZNZ9hhE), which is a Youtube vedio, comes up. R package makes it so much easier. Hence I may consider also the Google Earth Engine to be included in my exploration because I want to learn more about data processing. Or maybe not.
+
+Installing `XML`
+```{r, eval = FALSE}
+install.packages("XML")
+install.packages("methods")
+```
+
+
+
