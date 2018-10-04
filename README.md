@@ -63,7 +63,7 @@ The team consists of CS, Data Science, and Applied Math majors at UC Berkeley.
 8. Wait for someone (likely Ciera) to approve of your commit. 
 9. Tada.  It should be online.
 
-## Steps for keeping your local repo upto data with the downstream repo
+## Steps for keeping your local repo upto date with the downstream repo
 
 When collaborating on projects on Git, one thing you have to keep doing is making sure your forked rep is update with the "main repo".  Here are the steps for updating.  Please do this before you push to Github and update frequently to avoid merge conflicts. Essentially you have to 1. [Configure a remote for your fork](https://help.github.com/articles/configuring-a-remote-for-a-fork/) 2. [Sync you fork](https://help.github.com/articles/syncing-a-fork/).
 
@@ -71,8 +71,6 @@ When collaborating on projects on Git, one thing you have to keep doing is makin
 2. `git remote -v` to see your remote repos
 3. `git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git` to assign the main repo to a remote repo called `upstream`
 4. `git remote -v` Check to make sure it worked
-5.  `git fetch upstream` Fetch the branches and their respective commits from the `upstream` repository. Commits to master will be stored in a local branch, `upstream/master`.
-6. `git checkout master` Check out your fork's local master branch.
-7. `git merge upstream/master` Merge the changes from `upstream/master` into your local `master` branch. This brings your fork's `master` branch into sync with the upstream repository, without losing your local changes.
+5. `git pull origin master`
 
 Now everything should be up to date.....unless there were merge conflicts.
