@@ -54,7 +54,7 @@ dataRaw <- getObject(mn, "knb.92077.1")
 dataChar <- rawToChar(dataRaw)
 theData <- textConnection(dataChar)
 df <- read.csv(theData, stringsAsFactors=FALSE)
-df[1,]
+write.csv(df, file = "~/Documents/knb-susquehanna-river-flow.csv")
 ```
 library(XML)
 library(methods)
