@@ -71,6 +71,6 @@ When collaborating on projects on Git, one thing you have to keep doing is makin
 2. `git remote -v` to see your remote repos
 3. `git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git` to assign the main repo to a remote repo called `upstream`
 4. `git remote -v` Check to make sure it worked
-5. `git pull origin master`
+5. `git pull origin master`Pulls all the changes that were made in the upstream repo and merges with your local repo
 
 Now everything should be up to date.....unless there were merge conflicts.
