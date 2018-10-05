@@ -28,12 +28,13 @@ $ brew install redland
 And then I'm able to install the dataone package.
 
 
-
+To search and get the result, follow the example on the [website](https://github.com/DataONEorg/rdataone) or use `??dataone` to see manual. 
 ```{r, eval = FALSE}
+library(dataone)
 cn <- CNode("PROD")
 mn <- getMNode(cn, "urn:node:KNB")
-mySearchTerms <- list(q="keywords:climate",
-                      fl="id,title,dateUploaded,abstract,size",
+mySearchTerms <- list(q="abstract:climate",
+                     rows= "500", fl="id,title,dateUploaded,abstract,size",
                       sort="dateUploaded+desc")
 result <- query(mn, solrQuery=mySearchTerms, as="data.frame")
 result
@@ -46,9 +47,24 @@ metadata <- rawToChar(getObject(mn, id))
 doc = xmlRoot(xmlTreeParse(metadata, asText=TRUE, trim = TRUE, ignoreBlanks = TRUE))
 tf <- tempfile()
 saveXML(doc, tf)
-# file.show(tf)
-df
+file.show(tf)
+library(XML)
+library(methods)
+xml_tf <- xmlParse(tf)
+print(xml_tf)
 ```
+
+
+```{r}
+d1c <- D1Client("PROD", "urn:node:KNB")
+# Ask for the id, title and abstract
+queryParams <- list(q="abstract:\"climate\"", fq="id:doi*", 
+                    
+                    fl="id,title") 
+result <- query(d1c@mn, solrQuery=queryParams, as="data.frame", parse=FALSE)
+result
+```
+Write a data frame to a .csv file.
 ```{r, eval = FALSE}
 dataRaw <- getObject(mn, "knb.92077.1")
 dataChar <- rawToChar(dataRaw)
@@ -56,19 +72,12 @@ theData <- textConnection(dataChar)
 df <- read.csv(theData, stringsAsFactors=FALSE)
 write.csv(df, file = "~/Documents/knb-susquehanna-river-flow.csv")
 ```
-library(XML)
-library(methods)
-df <- xmlToDataFrame("tf")
 
-# Questions
-- What is XML? How can I make a data frame from it?
 
-# My Exploration
-Since there are a lot of XML files in the databases, I need to learn about XML, which looks really daunting but after a bit reading of [w3schools](https://www.w3schools.com/xml/xml_whatis.asp), I found it fairly manageble. 
 
-Well after reading w3schools, things get a lot more complicated. It tells me to write a Java class with all the readers, scanners and stuff. I think I'll save this after I finish my programming class in Java this semester.
+Since there are a lot of XML files in the databases, I need to learn about XML, which looks really daunting. [w3schools](https://www.w3schools.com/xml/xml_whatis.asp) is a good website for introduction to XML, yet its method of reading xml files is pretty complicated.
 
-So I googled "import data from XML using R", yes, [lifesaver](https://www.youtube.com/watch?v=1cM_ZNZ9hhE), which is a Youtube vedio, comes up. R package makes it so much easier. Hence I may consider also the Google Earth Engine to be included in my exploration because I want to learn more about data processing. Or maybe not.
+So I googled "import data from XML using R", and found the the Youtube [tutorial](https://www.youtube.com/watch?v=1cM_ZNZ9hhE) of using XML package. 
 
 Installing `XML`
 ```{r, eval = FALSE}
@@ -76,5 +85,11 @@ install.packages("XML")
 install.packages("methods")
 ```
 
+```{r, eval = FALSE}
+library(XML)
+library(methods)
+df <- xmlToDataFrame("tf")
+```
 
+Not able to parse XML https://stackoverflow.com/questions/17198658/how-to-parse-xml-to-r-data-frame
 
