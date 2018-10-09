@@ -1,0 +1,18 @@
+---
+title: "knb_review"
+output: html_notebook
+Author: Yikang Li
+---
+
+The notebook is written very well! And I was able to reproduce the dataframe by following the steps! While one of my suggestions is maybe adding more documentations or comments to the codes. The process is nicely reproducible but I don't quite understand what some codes are supposed to do and what I am getting at each step. It would be perfect if you can add some explainations to the codes and descriptions of the resulting dataframe!  
+Finally, for the last lines:
+
+```{}
+library(XML)
+library(methods)
+df <- xmlToDataFrame("tf") 
+```
+
+Should the "tf" be without quoting? I seem to get one single row as "df". What does it mean?  
+Thank you!
+
