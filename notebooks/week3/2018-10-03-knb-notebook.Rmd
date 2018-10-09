@@ -15,7 +15,6 @@ You could either search and download that specific data or use their [API](https
 To use their API, you need to install the [rDataone](https://github.com/DataONEorg/rdataone) package in Java, Python or R. I chose R, using the following:
 ```{r, eval = FALSE}
 install.packages("dataone")
-library(dataone)
 ```
 However, when installing the package, I came across this error:
 
@@ -30,43 +29,38 @@ And then I'm able to install the dataone package.
 
 To search and get the result, follow the example on the [website](https://github.com/DataONEorg/rdataone) or use `??dataone` to see manual. 
 ```{r, eval = FALSE}
+# load the package first
 library(dataone)
+
+# search the KNB database with the keyword "climate"
 cn <- CNode("PROD")
 mn <- getMNode(cn, "urn:node:KNB")
 mySearchTerms <- list(q="abstract:climate",
                      rows= "500", fl="id,title,dateUploaded,abstract,size",
                       sort="dateUploaded+desc")
+
+# show the search result as a data frame
 result <- query(mn, solrQuery=mySearchTerms, as="data.frame")
-result
+head(result, 10)
+
+# get the id of the first result
 result[1, c("id", "title")]
 id <- result[1,'id']
+```
 
-
-
+Now get the data from the database using `XML` and `dataone` packages.
+```{r, eval = FALSE}
+library(XML)
 metadata <- rawToChar(getObject(mn, id))
 doc = xmlRoot(xmlTreeParse(metadata, asText=TRUE, trim = TRUE, ignoreBlanks = TRUE))
 tf <- tempfile()
 saveXML(doc, tf)
-file.show(tf)  
-
-install.packages("XML")
-install.packages("methods")
-library(XML)
+file.show(tf)
 library(methods)
 xml_tf <- xmlParse(tf)
-print(xml_tf)
 ```
 
 
-```{r}
-d1c <- D1Client("PROD", "urn:node:KNB")
-# Ask for the id, title and abstract
-queryParams <- list(q="abstract:\"climate\"", fq="id:doi*", 
-                    
-                    fl="id,title") 
-result <- query(d1c@mn, solrQuery=queryParams, as="data.frame", parse=FALSE)
-result
-```
 Write a data frame to a .csv file.
 ```{r, eval = FALSE}
 dataRaw <- getObject(mn, "knb.92077.1")
@@ -93,6 +87,9 @@ library(XML)
 library(methods)
 df <- xmlToDataFrame("tf")
 ```
+When I try to change the the xml file to a data frame it gives me an error. So I'll keep working on xml files. 
 
-Not able to parse XML https://stackoverflow.com/questions/17198658/how-to-parse-xml-to-r-data-frame
-
+Potential solutions:
+https://stackoverflow.com/questions/17198658/how-to-parse-xml-to-r-data-frame
+history
+python xml
