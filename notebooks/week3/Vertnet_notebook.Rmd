@@ -29,7 +29,7 @@ Let's say we are interested in the records involving "Felidae". The first step i
 The next step is to transfer the text file into a csv file. Run the following codes in R under package "rio":
 ```{}
 library("rio")
-x <- import("Felidae_Vertnet.txt.tsv")
+x <- import("Felidae_Vertnet.txt")
 export(x, "Felidae_Vertnet.csv")
 ```
 import() infers the file format from the file's extension and calls the appropriate data import function for you, returning a simple data.frame. This works for lots of formats.   
