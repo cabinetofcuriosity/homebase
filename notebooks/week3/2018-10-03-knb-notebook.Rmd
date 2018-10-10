@@ -48,6 +48,16 @@ result[1, c("id", "title")]
 id <- result[1,'id']
 ```
 
+Since there are a lot of XML files in the databases, like this one, I need to learn about XML, which looks really daunting. [w3schools](https://www.w3schools.com/xml/xml_whatis.asp) is a good website for introduction to XML, yet its method of reading xml files is pretty complicated.
+
+So I googled "import data from XML using R", and found the the Youtube [tutorial](https://www.youtube.com/watch?v=1cM_ZNZ9hhE) of using XML package. 
+
+Installing `XML`
+```{r, eval = FALSE}
+install.packages("XML")
+install.packages("methods")
+```
+
 Now get the data from the database using `XML` and `dataone` packages.
 ```{r, eval = FALSE}
 library(XML)
@@ -56,10 +66,7 @@ doc = xmlRoot(xmlTreeParse(metadata, asText=TRUE, trim = TRUE, ignoreBlanks = TR
 tf <- tempfile()
 saveXML(doc, tf)
 file.show(tf)
-library(methods)
-xml_tf <- xmlParse(tf)
 ```
-
 
 Write a data frame to a .csv file.
 ```{r, eval = FALSE}
@@ -70,26 +77,16 @@ df <- read.csv(theData, stringsAsFactors=FALSE)
 write.csv(df, file = "~/Documents/knb-susquehanna-river-flow.csv")
 ```
 
-
-
-Since there are a lot of XML files in the databases, I need to learn about XML, which looks really daunting. [w3schools](https://www.w3schools.com/xml/xml_whatis.asp) is a good website for introduction to XML, yet its method of reading xml files is pretty complicated.
-
-So I googled "import data from XML using R", and found the the Youtube [tutorial](https://www.youtube.com/watch?v=1cM_ZNZ9hhE) of using XML package. 
-
-Installing `XML`
-```{r, eval = FALSE}
-install.packages("XML")
-install.packages("methods")
-```
-
+However, reading the xml files is pretty hard and I want to change it to data frame but I haven't found the right way yet.
 ```{r, eval = FALSE}
 library(XML)
 library(methods)
+xml_tf <- xmlParse(tf)
 df <- xmlToDataFrame("tf")
 ```
 When I try to change the the xml file to a data frame it gives me an error. So I'll keep working on xml files. 
 
-Potential solutions:
-https://stackoverflow.com/questions/17198658/how-to-parse-xml-to-r-data-frame
-history
-python xml
+Potential solutions:  
+https://stackoverflow.com/questions/17198658/how-to-parse-xml-to-r-data-frame  
+history  
+python xml  
