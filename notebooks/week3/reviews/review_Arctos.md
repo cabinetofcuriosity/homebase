@@ -21,9 +21,10 @@ The resulting link can be put into your browser to display the results in JSON f
 
 You can import the data in JSON format into Jupyter notebook using the following code:
 
-import pandas as pd
+'''import pandas as pd
 import json
 import requests
 resp=requests.get("http://arctos.database.museum/SpecimenResultsJSON.cfm?&taxon_name=wolf")
 data = resp.json()
 data
+'''
