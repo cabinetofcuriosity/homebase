@@ -73,13 +73,13 @@ I think data coming from a governmental institute or a university is pretty accu
 > At some point you will need to refine the scope of your project. You likely cannot explore ALL the data. Are their questions about the that are particularly interesting to you? Questions can either be about the quality of the data or of biological significance.
 
 Right now I'm thinking about how climate changes affect one species' living conditions. Or maybe just river flows? 
-I think biological significance sounds pretty interesting but I'm not sure if there are a lot of things to be done. 
-
+I think biological significance sounds pretty interesting but I'm not sure if there are a lot of things to be done. Quality of data is also good to study as well... 
 
 # Skills
 > Reiterate what skills you particullarly interested in learning. Do you see a clear path from this database to level up on those skills?
 
-If I do the quality of data, I think I can do something similar to what I did in a Data8 project, which is making a test set and compare the data with the set to determine the outliers. 
+I'm most interesting in machine learning.  
+If I do the quality of data, I think I can do something similar to what I did in a Data8 project, which is making a test set and compare the data with the set to determine the outliers. And I can explore more on that.
 On the other hand, biological significance will lead me to a data visualization path, I think. I will compare different pairs of data attributes and find their relationships?
 
 # Handle the data
@@ -88,4 +88,5 @@ Is there something that could be done to the data on the database side that woul
 I'm actually able to read XML now using Atom because it colors different nodes. I also changed some settings to "soft wrap at preffered line length" and it makes xml way easier to read! I'm almost in love with it!  
 Useful guide to limit line lengths in atom [here](https://stackoverflow.com/questions/49616864/limiting-line-length-in-atom)  
 
-As for some data that is stored in the xml file, I can extract that part and use the `xmlToDataFrame` method in `XML` package. [tutorial mentioned last time](https://www.youtube.com/watch?v=1cM_ZNZ9hhE).
+As for some data that is stored in the xml file, I can extract that part and use the `xmlToDataFrame` method in `XML` package.  
+[tutorial mentioned last time](https://www.youtube.com/watch?v=1cM_ZNZ9hhE)
