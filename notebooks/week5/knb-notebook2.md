@@ -1,7 +1,7 @@
 ---
 title: "KNB Notebook"
-output:   
-html_document:
+output: 
+  html_document:
     keep_md: true
 ---
 # Scope of the database
