@@ -1,8 +1,8 @@
 ---
 title: "KNB Notebook"
-output: 
+output:
   html_document:
-    keep_md: true
+    keep_md: yes
 ---
 # Scope of the database
 What are the measurements? Are there variables that are required for each data point? Try to explain in a programmatic way.
@@ -15,6 +15,7 @@ river <- read.csv("~/Documents/nahis/knb-susquehanna-river-flow.csv")
 str(river)
 river
 ```
+
 flow: cubic feet per second  
 a: USGS gage number [google "1570500 usgs"](https://pubs.usgs.gov/of/2016/1038/ofr20161038.pdf)  
 
@@ -51,7 +52,7 @@ We can check seasons and dates/datas and years.
 ## Uniqueness
 > Are all the entities or attributes within a dataset unique?
 
-By now I haven't seen any duplicate attributes. Also, since I have data frames, I think all the attributes should be unique.
+By now I haven't seen any duplicate attributes. Also, since I have data frames, I think all the attributes should be unique and otherwise R will change them automatically.
 
 ## Integrity
 > Are all the relationships populated for a particular entity – for example its parent or child entities?
@@ -65,6 +66,8 @@ The units are generally unclear.
 
 ## Accuracy
 > the hardest dimension to test for as this often requires some kind of manual checking by a Subject Matter Expert (SME).
+
+I think data coming from a governmental institute or a university is pretty accurate.
 
 # What are the variables that are most interesting to you?
 > At some point you will need to refine the scope of your project. You likely cannot explore ALL the data. Are their questions about the that are particularly interesting to you? Questions can either be about the quality of the data or of biological significance.
@@ -83,5 +86,6 @@ On the other hand, biological significance will lead me to a data visualization 
 Is there something that could be done to the data on the database side that would make your life easier when using this data? Do you wish it was in json over XML? Do you wish that there was a tool in Python that would connect to the database? Did you find the documentation incredibly hard to follow? What are some things you googled that helped you? What are the things you googled that had no answer but wish there was?
 
 I'm actually able to read XML now using Atom because it colors different nodes. I also changed some settings to "soft wrap at preffered line length" and it makes xml way easier to read! I'm almost in love with it!  
-Useful guide to limit line lengths in atom [here](https://stackoverflow.com/questions/49616864/limiting-line-length-in-atom)
+Useful guide to limit line lengths in atom [here](https://stackoverflow.com/questions/49616864/limiting-line-length-in-atom)  
 
+As for some data that is stored in the xml file, I can extract that part and use the `xmlToDataFrame` method in `XML` package. [tutorial mentioned last time](https://www.youtube.com/watch?v=1cM_ZNZ9hhE).
