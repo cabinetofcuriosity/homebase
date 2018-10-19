@@ -1,6 +1,6 @@
 ---
 title: "KNB Notebook"
-output: html_notebook
+output: 
 ---
 # Scope of the database
 What are the measurements? Are there variables that are required for each data point? Try to explain in a programmatic way.
